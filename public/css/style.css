@@ -1,0 +1,223 @@
+
+*{
+    margin: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    height: 60px;
+    width: 100vw;
+    background: linear-gradient(to right ,rgb(6, 6, 146),rgb(6, 6, 6));
+    position:relative;
+    transition: height ease-in-out .3s;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.1rem;
+}
+.link{
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vw;
+    justify-content: space-around;
+    padding: 5px;
+}
+.dropdown{
+    color: white;
+    font-weight: 400;
+    width: 120px;
+    text-align: center;
+}
+.dropdown-element{
+    display: none;
+}
+.dropdown:hover .dropdown-element{
+    display: block;
+}
+.dropdown:hover{
+    height: 10.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: linear-gradient(to bottom ,rgb(6, 6, 146),rgb(6, 6, 6));
+}
+.search input{
+    background: none;
+    border: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 5px;
+    color: white;
+    padding-left: 10px;
+}
+.search input:hover{
+    outline: none;
+    background: black;
+}
+.search input::placeholder{
+    color: white;
+    font-size: small;
+}
+.search button{
+    cursor: pointer;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.search button:hover{
+    background-color:rgb(217, 244, 231) ;
+    color: black;
+}
+.logo{
+    color:rgb(161, 220, 236);
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: x-large;
+    font-family: georgia;
+}
+.logo2{
+    color:rgb(247, 249, 249);
+    font-weight: 700;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: x-large;
+    font-family: georgia;
+    cursor: pointer;
+    display: none;
+}
+.footer-section{
+    margin-top: 10px;
+    height: 60px;
+    color: white;
+    background: linear-gradient(to right ,rgb(6, 6, 146),rgb(6, 6, 6));
+    text-align: center;
+    padding:10px;
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem;
+}
+.card1{
+    height: 29rem;
+    width: 190px;
+    background-color:rgb(245, 241, 236);
+    border: 5px solid rgb(245, 241, 236) ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.card1 h2{
+    text-align: center;
+    font-size: medium;
+    font-weight:bold;
+    padding: 2px;
+    height: 9%;
+}
+.card1 p{
+    text-align: justify;
+    font-size: small;
+}
+.img{
+    height:40%;
+    width:100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}.img img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.card1 a{
+    height: 30px;
+    width: 50%;
+    background-color: rgb(54, 55, 57);
+    color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: smaller;
+    padding: 2px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.dip1{
+    display: none;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap:5px;
+}
+@media only screen and (min-width:720px) and (max-width:1079px) {
+    .link{
+        display: none;
+    }
+    .link1{
+        width: 75vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 5vw;
+        justify-content:space-evenly;
+        padding: 5px;
+
+    }
+    .dropdown{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    .navbar1{
+        height: 42rem;
+        width: 97.8vw;
+        overflow-y: hidden;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:719px) {
+    .link{
+        display: none;
+    }
+    .link1{
+        width: 75vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 5vw;
+        justify-content:space-evenly;
+        padding: 5px;
+
+    }
+    .dropdown{
+        display: none;
+
+    }
+    .logo2{
+        display: block;
+    }
+    .navbar1{
+        height: 42rem;
+        width: 97.8vw;
+        overflow-y: hidden;
+    }
+}
